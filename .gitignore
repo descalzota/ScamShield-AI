@@ -1,0 +1,38 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Laravel
+/backend/vendor/
+/backend/node_modules/
+/backend/storage/logs/*
+/backend/storage/framework/cache/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/views/*
+/backend/bootstrap/cache/*.php
+
+# React / Vite
+/frontend/node_modules/
+/frontend/dist/
+
+# Python
+**/venv/
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# Training outputs and large models
+/ai-training/checkpoints/
+/ai-training/results/
+/ai-training/trained-model/
+/ai-training/exported-model/
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
